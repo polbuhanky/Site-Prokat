@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  object-fit: contain;
+}
+
+.header-hero {
+  max-width: 500px;
+}
+
+.header-title {
+  max-width: 400px;
+  font-family: Roboto;
+  font-weight: 600;
+  color: blueviolet;
+  font-size: 40px;
+  text-align: left;
+}
+
+.card {
+  position: relative;
+  height: 390px;
+}
+
+.rent-btn {
+  position: absolute;
+  bottom: 15px;
+}
+
+.card-body p {
+  font-size: 15px;
+  margin-bottom: 50px;
+}
+
+.active {
+  color: red;
+}
+
+.card {
+  transition: all 0.5s;
+}
+
+.bikes .card:hover {
+  transform: scale(1.05);
+}
+.rollers .card:hover {
+  transform: scale(1.05);
+}
+
+.rollers .card img {
+  width: 50%;
+  margin: auto;
+}
+
+.element {
+  height: auto;
+  padding: 70px;
+}
+
+.contact {
+  height: 430px;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    height: auto;
+  }
+  .contact {
+    width: 100% !important;
+  }
+}
